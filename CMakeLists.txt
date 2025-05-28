@@ -5,7 +5,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 include_directories(".")
-add_executable(Qt1 "main.cpp" "CMyObject.cpp")
+add_executable(
+  Qt1 #
+  "Main.cpp" #
+  "CEditor.cpp" #
+)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 target_link_libraries(Qt1 PRIVATE Qt6::Widgets)
