@@ -23,6 +23,7 @@ int main(int p_argc, char *p_argv[]) {
 	QVBoxLayout *layout = new QVBoxLayout;
 
 	QWidget *container = new QWidget;
+	container->setWindowTitle("Calc!");
 	container->setLayout(layout);
 
 	CEditor *editor = new CEditor(QStringLiteral("Ain't mathin', yo' head, yo?"), container);
